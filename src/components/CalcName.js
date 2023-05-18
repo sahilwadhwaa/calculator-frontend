@@ -11,7 +11,6 @@ export const CalcName= ({display, calc, resetDisplay}) =>{
     //contains logic for POST request to the express server
     const handlePost= async (data) =>{
         const response=  await fetch("https://calculator-backend-hcvr.onrender.com/api/history", {
-            method: "no-cors",
             method: "POST",
             body: JSON.stringify(data),
             headers: {
